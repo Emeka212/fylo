@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+    <title>Login</title>
+
+     <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Portfolio Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!-- FontAwesome JS-->
+    <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    
+    
+
+</head> 
+
+<body>
+    
+    <header class="header">
+	    
+        <div class="top-bar theme-bg-primary-darken">
+            
+            <div class="container-fluid">
+            
+				<nav class="navbar navbar-expand-lg navbar-dark position-relative">
+					
+					
+					<ul class="social-list list-inline mb-0">
+			            <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-facebook fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+					
+	
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse text-uppercase" id="navigation">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							   <a class="nav-link" href="projects.html">Projects</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="talks.html">Talks</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="resume.html">Resume</a>
+							</li>
+							<li class="nav-item active mr-lg-3">
+							    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item dropdown mr-0">
+							    <a class="nav-link dropdown-toggle" href="#" id="navigationLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Pages
+								</a>
+								<div class="dropdown-menu dropdown-menu-right text-capitalize shadow-lg" aria-labelledby="navigationLink">
+									<a class="dropdown-item" href="project.html">Project Case Study (1 Column)</a>
+									<a class="dropdown-item" href="project-alt.html">Project Case Study (2 Columns)</a>
+									<a class="dropdown-item" href="blog-post.html">Blog Post</a>
+								</div>
+							</li>
+							
+						</ul>
+						<span id="slide-line"></span>
+					</div>
+					
+					
+					
+				</nav>
+            
+            </div><!--//container-->
+            
+        </div><!--//top-bar-->
+        
+        
+        
+        
+        
+        <form method="GET" action="home.html" name="vform" onsubmit="return fors()">
+        <div align="center" style="box-shadow: blue;margin-top:10% ;margin-left: 15px;" class="div">
+       
+        <img src="me1.jpg" style="width: 200px;height: 200px;border-radius: 1000px;margin-top: 28px;margin-bottom: 30px;"></img>
+        
+        <input type="text" placeholder="Enter researve word" required id="pass" name="pass"></input> 
+        <i class="fa fa-user" style="font-size: 20px;position: absolute;margin-top: 45px;right: 50px;"></i>
+  <div id="error">If You are not a user !!(Don't try to log in)</div>
+        <br />
+        <input type="submit" value="Log in"></input>
+        
+        </div>
+        </form>
+        
+<style>
+#error{
+  color: red;
+  margin-lef: -50px; 
+  font-size: 15px;
+  display: none;
+  background: #ff;
+  margin-top: 5px;
+  widt: 390px;
+}
+.div{
+background: #0AC986;
+height: 500px;
+width: 350px;
+margin-bottom: 10%;
+text-align: center;
+transform: (-50%,-50%);
+box-shadow:5px 5px 5px 0px rgba(0,0,0,.5);
+}
+
+input[type="text"]{
+  border: 30px solid blue;
+  width: 90%;
+  height: 50px;
+  border: none;
+  font-size: 17px;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding-left: 3px;
+  outline: none;
+  padding-right: 2px;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,.5);
+}
+input[type="text"]:hover{
+  border: 2px solid #0AC986;
+  opacity: 0.9;
+}
+
+input[type="submit"]{
+  width: 50%;
+  height: 50px;
+  background: indigo;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px 0px rgba(0,0,0,.5);
+  outline: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: none;
+  color: #fff;
+}
+</style>
+        
+<script>
+
+function fors(){
+var yu = document.getElementById("pass").value;
+
+if(yu != "vpass" || yu == ""){
+ document.getElementById("error").style.display = "block";
+
+document.getElementById("pass").style.border = "2px solid orangered";
+   return false;
+}
+
+}
+
+alert("For Authorise User Only !!");
+
+</script>        
+        
+        
+        
+        
+        <footer class="footer text-light text-center py-2" style="bottom: 0px;">
+	    <small class="copyright">Template Copyright &copy; <a class="text-light" href="https://themes.3rdwavemedia.com/" target="_blank">MC Steve Media</a></small>
+    </footer>
+    
+    
+
+
+
+     <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>    
+    
+    
+    <!--Page Specific JS -->
+    <script type="text/javascript" src="assets/plugins/jquery-validation/jquery.validate.min.js"></script> 
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/form.js"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>   
+    
+</body>
+</html>
+
+
+
+
+

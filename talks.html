@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+    <title>Talks</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Portfolio Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!-- FontAwesome JS-->
+    <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
+    
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+
+</head> 
+
+<body>
+
+
+<section>
+<div style="text-align: center;position: fixed;left: 3%;bottom: 20%;border-radius: 30px;overflow-x: hidden;height: 0px;transition: 0.5s;background: black;width: 43px;" id="hi">
+
+<a href="https://github.com"><i class="fab fa-github-alt fa-fw"  style="border-radius: 10px;color: #fff;font-size: 40px;text-align: center;margin-left: -3px;margin-top: 15px;"></i></a>
+
+<br/>
+<a href="https://twitter.com"><i class="fab fa-twitter fa-fw" style="border-radius: 10px;color: skyblue;font-size: 50px;font-size: 40px;text-align: center;margin-left: -3px;"></i></a>
+
+<br/>
+<a href="https://facebook.com"><i class="fab fa-facebook fa-fw" style="border-radius: 10px;color: blue;font-size: 40px;text-align: center;margin-left: -3.3px;"></i></a>
+<br/>
+<i class="fa fa-thumbs-up" style="border-radius: 10px;color: red;font-size: 40px;text-align: center;padding-left: 3px;margin:bottom: 15px;" onclick="like()"></i>
+</div>
+
+<div onclick="hi()">
+<i class="fa fa-bars fa-fw" style="position: fixed; bottom: 13%;left: 3%;border-radius: 10px;background: black;color: skyblue;font-size: 40px;padding-left: 10px;padding-right: 10px;opacity: none;width: 40px;" id="his"></i>
+</div>
+
+<div onclick="him()">
+<i class="fa fa-close fa-fw" style="position: fixed; bottom: 13%;left: 3%;border-radius: 10px;background: black;color: skyblue;display: none;font-size: 40px;text-align: center;padding-left: 10px;padding-right: 10px;width: 40px;" id="him"></i>
+</div>
+</section>
+
+<script>
+function like(){
+alert ("thanks for liking my web-site");
+}
+function hi(){
+document.getElementById("hi").style.height = "35%";
+document.getElementById("his").style.display = "none";
+document.getElementById("him").style.display = "block";
+}
+function him(){
+document.getElementById("hi").style.height = "0px";
+document.getElementById("his").style.display = "block";
+document.getElementById("him").style.display = "none";
+}
+
+</script>
+
+
+
+	<header class="header">
+	    
+        <div class="top-bar theme-bg-primary-darken">
+            
+            <div class="container-fluid">
+            
+				<nav class="navbar navbar-expand-lg navbar-dark position-relative">
+					
+					
+					<ul class="social-list list-inline mb-0">
+			            <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-facebook fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a class="text-white" href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+					
+	
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse text-uppercase" id="navigation">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							   <a class="nav-link" href="projects.html">Projects </a>
+							</li>
+							<li class="nav-item active mr-lg-3">
+							    <a class="nav-link" href="talks.html">Talks <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="resume.html">Resume</a>
+							</li>
+							<li class="nav-item mr-lg-3">
+							    <a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<li class="nav-item dropdown mr-0">
+							    <a class="nav-link dropdown-toggle" href="#" id="navigationLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Pages
+								</a>
+								<div class="dropdown-menu dropdown-menu-right text-capitalize shadow-lg" aria-labelledby="navigationLink">
+									<a class="dropdown-item" href="project.html">Project Case Study (1 Column)</a>
+									<a class="dropdown-item" href="project-alt.html">Project Case Study (2 Columns)</a>
+									<a class="dropdown-item" href="blog-post.html">Blog Post</a>
+								</div>
+							</li>
+							
+						</ul>
+						<span id="slide-line"></span>
+					</div>
+					
+					
+					
+				</nav>
+            
+            </div><!--//container-->
+            
+        </div><!--//top-bar-->
+
+
+         <div class="header-intro theme-bg-primary text-white py-5">
+	        <div class="container">
+		        <h2 class="page-heading mb-3">Talks</h2>
+		        <div class="page-heading-tagline">Want me to talk at your event? <br class="d-md-none"> <a class="link-on-bg" href="contact.html">Get in touch</a></div>
+		        
+	        </div><!--//container-->
+        </div><!--//header-intro-->
+        
+    </header><!--//header-->
+        
+    <section class="section pt-5">
+        <div class="container">
+	        
+	        <div class="media mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		        <div class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
+		            <iframe class="embed-responsive-item"  width="560" height="315" src="https://www.youtube.com/embed/RS36gBEp8OI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		        </div>
+		        
+		        <div class="media-body p-4">
+		        <h4>YouTube Video Lorem Ipsum</h4>
+			        <ul class="talk-meta list-inline mb-2">
+				        <li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>10 June, 2018</li>
+				        <li class="list-inline-item"><i class="fas fa-video mr-2"></i>Video</li>
+			        </ul>
+			        <div class="talk-content">
+				        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus penatibus et magnis dis parturient montes, nascetur ridiculus mus.. Find out more about the conference in my <a href="blog-post.html">recent blog post</a>.</p>
+				        
+			        </div>
+		        </div>
+	        </div><!--//media-->   
+	        
+	        <div class="media mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		        <div class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
+		            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/aCZBC5rvT6Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		        </div>
+		        
+		        <div class="media-body p-4">
+			        <h4>Youtube Podcast Lorem Ipsum</h4>
+			        <ul class="talk-meta list-inline mb-2">
+				        <li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>23 Apr, 2018</li>
+				        <li class="list-inline-item"><i class="fas fa-headphones mr-2"></i>Podcast</li>
+			        </ul>
+			        <div class="talk-content">
+				        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus penatibus et magnis dis parturient montes, nascetur ridiculus mus..
+			        </div>
+		        </div>
+	        </div><!--//media-->  
+	        
+	        <div class="media mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		        <div class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
+		            <iframe class="embed-responsive-item" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/361052930&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+		        </div>
+		        
+		        <div class="media-body p-4">
+			        <h4>SoundCloud Podcast Lorem Ipsum</h4>
+			        <ul class="talk-meta list-inline">
+				        <li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>10 May, 2018</li>
+				        <li class="list-inline-item"><i class="fas fa-headphones mr-2"></i>Podcast</li>
+			        </ul>
+			        <div class="talk-content">
+				        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			        </div>
+		        </div>
+	        </div><!--//media--> 
+	        
+	        <div class="media mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		        <div class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
+		            <iframe class="embed-responsive-item" src="http://www.slideshare.net/slideshow/embed_code/key/i1NNG6ccfL0c3S" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/JanBaskDigitalDesign/angularjs-interviewquestionsanswers" title="Angularjs interview-questions-answers" target="_blank">Angularjs interview-questions-answers</a> </strong> from <strong><a href="https://www.slideshare.net/JanBaskDigitalDesign" target="_blank">JanBask </a></strong> </div>
+		        </div>
+		        
+		        <div class="media-body p-4">
+			        <h4>Linkedin Slideshare Lorem Ipsum</h4>
+			        <ul class="talk-meta list-inline">
+				        <li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>8 Mar, 2018</li>
+				        <li class="list-inline-item"><i class="fab fa-slideshare mr-2"></i>Presentation</li>
+			        </ul>
+			        <div class="talk-content">
+				        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			        </div>
+		        </div>
+	        </div><!--//media--> 
+	        
+	        
+	        
+
+        </div><!--//container-->
+    </section><!--//section-->
+
+
+    <section class="section py-5 bg-primary text-white">
+		<div class="container">
+			<div class="text-center">
+			    <img class="profile-small d-inline-block mx-auto rounded-circle mb-2" src="assets/images/me1.jpg" alt="">
+		    </div>
+		    <h3 class="section-title font-weight-bold text-center mb-2">Interested in hiring me for your project?</h3>
+		    <div class="section-intro mx-auto text-center mb-3">
+			    Looking for an experienced full-stack developer to build your web app or ship your software product? To start an initial chat, just drop me an email at <a class="link-on-bg" href="mailto:stephenugo939@gmail.com">stephenugo939@gmail.com</a> or use the <a class="link-on-bg" href="contact.html">form on the contact page</a>.
+		    </div>
+		    <div class="text-center">
+		        <a class="theme-btn-on-bg btn" href="contact.html">Let's Talk</a>
+		    </div>
+		</div><!--//container-->
+	</section>
+    
+    <footer class="footer text-light text-center py-2">
+	    <small class="copyright">Template Copyright &copy; <a class="text-light" href="https://themes.3rdwavemedia.com/" target="_blank">Stephen Michael Media</a></small>
+    </footer>
+
+
+     <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>    
+    
+    
+    <!--Page Specific JS -->
+    <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/isotope.pkgd.min.js"></script> 
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/isotope-custom.js"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>     
+    
+
+</body>
+
+
+</html> 
